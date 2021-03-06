@@ -1,4 +1,4 @@
-runtime: python370
+runtime: python37
 service: default
 entrypoint: gunicorn -b :$PORT main:APP
 
