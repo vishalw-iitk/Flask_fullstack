@@ -1,6 +1,6 @@
 runtime: python37
 service: default
-entrypoint: gunicorn -b :$PORT main:APP
+entrypoint: gunicorn -b :$PORT -w 1 main:APP
 
 handlers:
     - url: /favicon\.ico
