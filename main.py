@@ -78,5 +78,5 @@ if __name__ == "__main__":
         PORT = 8081
     # PORT = 8081
 
-    app.run(host='0.0.0.0', port=PORT, debug=True)
+    app.run(port=PORT, debug=True)
     # app.run(debug=True)
