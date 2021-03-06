@@ -1,0 +1,137 @@
+body{
+    box-sizing: border-box;
+    /* background-color: black; */
+    padding: 0% 5%;
+    /* padding: 0; */
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro{
+    /* background-color: red; */
+    text-align: center;
+    font-size: 1.5rem;
+    height: 80px;
+    min-width: 250px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* width: 100vw; */
+}
+.myname{
+    text-decoration: underline double rgb(13, 0, 83);
+    font-size: 2rem;
+    /* margin-top: 10px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stocktitle{
+    color: rgb(4, 4, 139);
+    margin-top: -10px;
+}
+
+.getdata{
+    /* background-color: blue; */
+    text-align: center;
+    height: 50px;
+    min-width: 250px;
+    margin-top: 20px;
+}
+.getdata button{
+    width: 200px;
+    min-width: 200px;
+    height: 40px;
+    background-color: rgb(49, 123, 172);
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+    /* margin: 0px 0px 0px 0px; */
+    cursor: pointer;
+}
+.getdata button:hover{
+    background-color: rgb(10, 62, 173);
+}
+
+.dataset-container{
+    /* background-color: aquamarine; */
+    text-align:center;
+    width: 90%;
+    min-width: 300px;
+    height: 400px;
+    margin: 20px auto;
+    height: 400px;
+    overflow-y: auto;
+    /* position: relative; */
+}
+
+.tabledata{
+    width: 90%;
+    background-color: rgb(218, 218, 218);
+    min-width: 300px;
+    
+    overflow-x: auto;
+    /* text-align:center; */
+    /* max-width: 1000px; */
+    /* min-width: 300px; */
+    height: 350px;
+    margin: 0px auto;
+    /* overflow: auto; */
+    position: relative;
+}
+
+.tabledata th{
+    background-color: white;
+    min-width: 80px;
+    position: sticky;
+    padding: 10px;
+    top: 0;
+}
+
+.train{
+    margin: 30px 0px;
+    min-width: 200px;
+    max-width: 300px;
+    /* background-color: aqua; */
+}
+
+.train button{
+    height: 40px;
+    width: 90%;
+    color: white;
+    font-size: medium;
+    font-weight:bolder;
+    background-color: rgb(49, 123, 172);
+    cursor: pointer;
+}
+
+.train button:hover{
+    background-color: rgb(10, 62, 173);
+}
+
+.trainresult{
+    /* min-width: 400px; */
+    max-width: 700px;
+    
+    /* text-align: center; */
+    /* align-items: center; */
+    /* padding: auto; */
+    
+    
+}
+.trainresult .trainblock{
+    /* background-color: blue; */
+    margin: 20px 10%;
+    /* margin: auto; */
+    min-width: 350px;
+}
+.trainresult .trainblock td{
+    padding: 10px;
+}
+.waitmsg{
+    font-size: small;
+    color: blue;
+}
