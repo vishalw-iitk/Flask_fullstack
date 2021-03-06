@@ -1,0 +1,8 @@
+runtime: python37
+service: back
+entrypoint: gunicorn -b :$PORT main:APP
+
+handlers:
+    - url: /favicon\.ico
+      static_files: favicon.ico
+      upload: favicon\.ico
