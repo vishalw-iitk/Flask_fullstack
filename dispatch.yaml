@@ -1,8 +1,8 @@
 dispatch:
   # d service serves the typical web resources and all static resources.
   - url: "*/process"
-    service: back
+    service: default
   - url: "*/"
-    service: back
+    service: default
   - url: "*/users"
-    service: back
+    service: default
