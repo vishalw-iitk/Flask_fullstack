@@ -1,5 +1,5 @@
 runtime: python37
-service: back
+service: default
 entrypoint: gunicorn -b :$PORT main:APP
 
 handlers:
