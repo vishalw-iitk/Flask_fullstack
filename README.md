@@ -3,6 +3,8 @@
 ###### Note : Depoyment over GCP for deep learning app requires addition storage apart from thier free storage limits. This is mainly because of the tensorflow 2.2 package which occupies lot of storage.<br>
 ##### <b>However, this code is fully functional locally.<b><br>
 
+![Screenshot](local_sample.png)
+
 1. <b>Opening price forecasting webapp.</b>
   * This projects aims at creating an opening price forecast for the next 90 days.
   * It is developed using the Python Flask backend and ReactJS frontend.
