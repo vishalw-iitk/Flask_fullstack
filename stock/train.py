@@ -87,11 +87,11 @@ def process(df, db_connection):
     ax = sns.lineplot(df_forecast['Date'], df_forecast['Open'])
     fig = ax.get_figure()
     
-    if os.path.exists("stock_app/src/output.png"):
+    if os.path.exists("open_stock_app/src/output.png"):
         print("file existsssss")
-        os.remove("stock_app/src/output.png")
+        os.remove("open_stock_app/src/output.png")
     
-    fig.savefig('stock_app/src/output.png')
+    fig.savefig('open_stock_app/src/output.png')
 
     df_forecast.to_sql(con=db_connection, name='forecast_table', if_exists='replace')
 

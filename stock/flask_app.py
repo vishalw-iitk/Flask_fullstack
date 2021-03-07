@@ -5,6 +5,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 import pymysql
 from train import process
+from os import environ
 
 from tkinter import *
 from datetime import *
@@ -17,12 +18,12 @@ app = Flask(__name__)
 cors = CORS(app)
 
 
-app.config['MYSQL_HOST'] = "localhost"
-app.config['MYSQL_USER'] = "root"
-app.config['MYSQL_PASSWORD'] = "vishalsql"
-app.config['MYSQL_DB'] = "users_db"
+app.config['MYSQL_HOST'] =  environ.get('MYSQL_HOST')
+app.config['MYSQL_USER'] = environ.get('MYSQL_USER')
+app.config['MYSQL_PASSWORD'] = environ.get('MYSQL_PASSWORD')
+app.config['MYSQL_DB'] = environ.get('MYSQL_DB')
 
-db_connection_str = 'mysql+pymysql://root:vishalsql@localhost/users_db'
+db_connection_str = environ.get('DBSTRING')
 db_connection = create_engine(db_connection_str)
 
 mysql = MySQL(app)
@@ -66,7 +67,7 @@ def get_sql():
     
     print(df.columns)
     l = process(df, db_connection)
-    print("ppppppppppppppppppp")
+    # print("ppppppppppppppppppp")
     return l
 
 
